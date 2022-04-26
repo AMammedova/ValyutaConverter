@@ -119,10 +119,10 @@ margin-top: 40px;
     padding-left: 0;
 }
 #intro{
-margin-left: 11%;
+margin-left: 9%;
 }
-#from .active,
-#to .active{
+#from .activefrom,
+#to .activeto{
     background-color: purple;
     color: white;
     border: none;
@@ -155,6 +155,26 @@ align-items: center;
 
 color: #C6C6C6;
 
+}
+ul li{
+    cursor: pointer;
+}
+.fromInp,
+.toInp{
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+}
+#reverse{
+    display: inline-block;
+    position: absolute;
+    top: 37%;
+    left: 47%;
+    font-size: 30px;
+    cursor: pointer;
+    color: #9F9F9F;
 }
 @media only screen and (max-width: 960px) {
     .nav-text{
