@@ -170,7 +170,7 @@ ul li{
 #reverse{
     display: inline-block;
     position: absolute;
-    top: 37%;
+    top: 25%;
     left: 47%;
     font-size: 30px;
     cursor: pointer;
@@ -188,12 +188,33 @@ ul li{
     .col-sm-6{
         width: 40% !important; 
     }
-    
+    #reverse{
+        top: 38%;
+   
+    transform: rotate(90deg);
+    }
   }
   @media only screen and (max-width: 768px) {
     .intro-text{
         width: 340px;
         font-size: 23px;
+    }
+    #reverse{
+        top: 45%;
+   
+    transform: rotate(90deg);
+    }
+    
+  }
+  @media only screen and (max-width: 415px) {
+    .intro-text{
+        width: 340px;
+        font-size: 23px;
+    }
+    #reverse{
+        top: 45%;
+   
+    transform: rotate(90deg);
     }
     
   }
