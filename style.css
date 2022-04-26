@@ -95,6 +95,7 @@ color: #000000;
 
 }
 .intro-header{
+    width: 100%;
     margin-top: 5%;
 }
 #from{
@@ -168,10 +169,8 @@ ul li{
     width: 100%;
 }
 #reverse{
-    display: inline-block;
-    position: absolute;
-    top: 25%;
-    left: 47%;
+    
+  margin-top: 5%;
     font-size: 30px;
     cursor: pointer;
     color: #9F9F9F;
@@ -189,8 +188,11 @@ ul li{
         width: 40% !important; 
     }
     #reverse{
-        top: 38%;
-   
+      
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2%;
     transform: rotate(90deg);
     }
   }
@@ -200,10 +202,13 @@ ul li{
         font-size: 23px;
     }
     #reverse{
-        top: 45%;
-   
-    transform: rotate(90deg);
-    }
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+         transform: rotate(90deg);
+         }
     
   }
   @media only screen and (max-width: 415px) {
@@ -212,9 +217,12 @@ ul li{
         font-size: 23px;
     }
     #reverse{
-        top: 45%;
-   
-    transform: rotate(90deg);
-    }
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+         transform: rotate(90deg);
+         }
     
   }
