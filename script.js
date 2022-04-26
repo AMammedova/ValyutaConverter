@@ -14,6 +14,7 @@ let listelements=document.querySelectorAll(".listelement")
 let listelementfrom=document.querySelectorAll(".listelementfrom")
 let listelementfromarray=Array.from(listelementfrom)
 let listelementtoarray=Array.from(listelements)
+
 listelements.forEach(x=>x.addEventListener("click",()=>{
  
     listelements.forEach(x=>x.classList.remove("activeto"))
@@ -43,12 +44,13 @@ function Convert(){
        
        
         moneyTextFrom.innerText=` 1 ${fromValue} =${data.rates[toValue]} ${toValue}`
-        toInp.value= `${fromInp.value*data.rates[toValue]}`
+        toInp.value= `${(fromInp.value*data.rates[toValue]).toFixed(2)}`
         moneyTextTo.innerText=`1 ${toValue}=${1/data.rates[toValue]} ${fromValue}`
   
   })
 }
 reverse.addEventListener("click",()=>{
+  
   reversefrom=document.querySelector(".activefrom") 
   reverseto=document.querySelector(".activeto")
   listelementfromarray.forEach(x=>x.classList.remove("activefrom"))
